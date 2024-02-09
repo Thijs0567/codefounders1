@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mijn tweede pagina</title>
+        <style>
+            /* Tag selector */
+            span {
+                color: rgb(80, 0, 73);
+            }
+
+            img {
+                border: 12px solid rgb(0, 0, 0);
+                aspect-ratio: 16 / 9;
+            }
+
+            /* Class selector */
+            .header2 {
+                color: darkgoldenrod;
+            }
+            .span-1 {
+                color: darkgoldenrod;
+                font-size: 80px;
+                display: block; 
+            }
+            /* ID selector */
+            #plaatje-1 {
+                border: 4px dashed blueviolet;
+            }
+            #titel {
+                font-weight: 900;
+                text-decoration: line-through;
+            }
+        </style>
+         <script>
+            // commentaar
+            var a; //declaration
+            a = 6; // assignment
+            var a;
+            a = 12;
+            let b  = true; //declaration + assignment = initialization
+            // let b; mag niet opnieuw declareren
+            let c = "Thijs"; // string
+            var d = 6.0;
+
+            console.log(a, b, c, d)
+            console.log(a*2)
+            console.log(c.repeat(3))
+            console.log(d/2)
+
+           
+            function additionfunc() {
+                let getal = 12*36.4;
+                alert(getal)
+            }
+
+            function var_afdrukker(x) {
+                console.log(x)
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <!-- Headers -->
+        <h1 id="titel">Mijn tweede pagina</h1>
+        <h2 class="header2">Header 2</h2>
+
+        <!-- Texten -->
+        <p>Paragraaf 1</p>
+        <span style="color: rgb(5, 94, 100);">Span 1</span>
+        <span class="span-1">Span 2</span>
+
+        <!-- Afbeelding -->
+        <br>
+        <img id="plaatje-1" src="html.jpg">
+        <br>
+        <img src="html.jpg" style="border: 6px solid rgb(190, 17, 17);" >
+
+        <h1>H</h1>
+        <h2>H</h2>
+        <h3>H</h3>
+
+        <button type= "button" onclick= "additionfunc()">
+            Click me!
+        </button>
+        
+        <button type= "button" onclick= "var_afdrukker(a)">
+            print a
+        </button>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum temporibus explicabo omnis, molestias suscipit porro, alias debitis excepturi exercitationem optio maiores amet? Vel quisquam deserunt voluptas, iusto aperiam quaerat!</p>
+        </p>
+        <img src="cool.jpg" width="100" height="150" style="object-fit: cover;">
+        <br>
+        <a href="http://www.w3schools.com">w3schools</a>
+    
+        <ul>
+            <li>ul 1</li>
+            <li>ul 2</li>
+        </ul>
+        <ol>
+            <li>ol 1</li>
+            <li>ol 2</li>
+        </ol>
+        <table>
+            <thead>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <th>kolom 3 (leeg)</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>00</td>
+                <td>01</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
